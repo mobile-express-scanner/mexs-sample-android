@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Mobile Express Scanner</string>
+    <string name="preference_file_key">com.mexs.scanner.PREFERENCE_FILE_KEY</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="*">
+
+    <string name="printer_brother_ip">192.168.118.1</string>
+    <integer name="printer_brother_port">9100</integer>
+    <string-array name="printer_names">
+        <item>BROTHER QL-820NWB</item>
+        <item>ZEBRA ZQ520</item>
+    </string-array>
+
+    <string-array name="tests">
+        <item>SWAB - SINGLE</item>
+        <item>SWAB - POOLED</item>
+        <item>SEROLOGY</item>
+        <item>OTHERS</item>
+    </string-array>
+
+    <string-array name="labs">
+        <item>LABORATORY 1</item>
+        <item>LABORATORY 2</item>
+        <item>LABORATORY 3</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>MALE</item>
+        <item>FEMALE</item>
+    </string-array>
+
+    <string-array name="top_nat">
+        <item>MALAYSIAN;MALAYSIA;MYS</item>
+        <item>SINGAPOREAN;SINGAPORE;SGP</item>
+    </string-array>
+
+</resources>
