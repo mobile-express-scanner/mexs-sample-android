@@ -113,7 +113,6 @@ public class CameraFragment extends Fragment implements View.OnClickListener{
                 ((TextView) mLayout.findViewById(R.id.text_preview_dob)).setText(idData.getDob());
                 ((TextView) mLayout.findViewById(R.id.text_preview_gender)).setText(idData.getGender());
                 ((TextView) mLayout.findViewById(R.id.text_preview_nationality)).setText(idData.getNationality());
-                ((TextView) mLayout.findViewById(R.id.text_preview_address)).setText(idData.getAddress());
 
                 // Show green tick if detection confident
                 mLayout.findViewById(R.id.ic_check_name).setVisibility(idData.isNameConfident() ?  View.VISIBLE : View.INVISIBLE);
@@ -121,7 +120,6 @@ public class CameraFragment extends Fragment implements View.OnClickListener{
                 mLayout.findViewById(R.id.ic_check_dob).setVisibility(idData.isDobConfident() ?  View.VISIBLE : View.INVISIBLE);
                 mLayout.findViewById(R.id.ic_check_gender).setVisibility(idData.isGenderConfident() ?  View.VISIBLE : View.INVISIBLE);
                 mLayout.findViewById(R.id.ic_check_nationality).setVisibility(idData.isNationalityConfident() ?  View.VISIBLE : View.INVISIBLE);
-                mLayout.findViewById(R.id.ic_check_address).setVisibility(idData.isAddressConfident() ?  View.VISIBLE : View.INVISIBLE);
 
                 // Show/hide buttons
                 mLayout.findViewById(R.id.layout_start).setVisibility(idData.isConfidentAll() ? View.GONE : View.VISIBLE);
@@ -181,7 +179,6 @@ public class CameraFragment extends Fragment implements View.OnClickListener{
                 record.setDob(mIdData.getDob());
                 record.setGender(mIdData.getGender());
                 record.setNationality(mIdData.getNationality());
-                record.setAddress(mIdData.getAddress());
                 mViewModel.mCurRecord.setValue(record);
 
                 mViewModel.setCurState("form");
